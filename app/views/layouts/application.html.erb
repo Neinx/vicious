@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Vicious</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+	<head>
+	  <title>Ruby on Rails Tutorial Sample app | <%= yield(:title) %></title>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>
+	<%= yield %>
+	</body>
 </html>
